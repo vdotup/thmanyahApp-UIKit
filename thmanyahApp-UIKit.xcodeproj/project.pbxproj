@@ -16,7 +16,7 @@
 		A2E1A05627737FB800E4D4F1 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2E1A05527737FB800E4D4F1 /* Data.swift */; };
 		A2E1A05A2773800A00E4D4F1 /* StatModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2E1A0592773800A00E4D4F1 /* StatModel.swift */; };
 		A2E1A05C2773804500E4D4F1 /* SideBarItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2E1A05B2773804500E4D4F1 /* SideBarItemModel.swift */; };
-		A2E1A05F2773806D00E4D4F1 /* Color+.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2E1A05E2773806D00E4D4F1 /* Color+.swift */; };
+		A2E1A05F2773806D00E4D4F1 /* UIColor+.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2E1A05E2773806D00E4D4F1 /* UIColor+.swift */; };
 		A2E1A062277380BE00E4D4F1 /* IBMPlexSansArabic-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = A2E1A061277380B700E4D4F1 /* IBMPlexSansArabic-SemiBold.otf */; };
 		A2E1A063277380BE00E4D4F1 /* IBMPlexSansArabic-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = A2E1A060277380B600E4D4F1 /* IBMPlexSansArabic-Regular.otf */; };
 /* End PBXBuildFile section */
@@ -33,7 +33,7 @@
 		A2E1A05527737FB800E4D4F1 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		A2E1A0592773800A00E4D4F1 /* StatModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatModel.swift; sourceTree = "<group>"; };
 		A2E1A05B2773804500E4D4F1 /* SideBarItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideBarItemModel.swift; sourceTree = "<group>"; };
-		A2E1A05E2773806D00E4D4F1 /* Color+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+.swift"; sourceTree = "<group>"; };
+		A2E1A05E2773806D00E4D4F1 /* UIColor+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+.swift"; sourceTree = "<group>"; };
 		A2E1A060277380B600E4D4F1 /* IBMPlexSansArabic-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IBMPlexSansArabic-Regular.otf"; sourceTree = "<group>"; };
 		A2E1A061277380B700E4D4F1 /* IBMPlexSansArabic-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IBMPlexSansArabic-SemiBold.otf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -104,7 +104,7 @@
 		A2E1A05D2773805500E4D4F1 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				A2E1A05E2773806D00E4D4F1 /* Color+.swift */,
+				A2E1A05E2773806D00E4D4F1 /* UIColor+.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -182,7 +182,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A2E1A05F2773806D00E4D4F1 /* Color+.swift in Sources */,
+				A2E1A05F2773806D00E4D4F1 /* UIColor+.swift in Sources */,
 				A2E1A04627737E1400E4D4F1 /* ViewController.swift in Sources */,
 				A2E1A04227737E1400E4D4F1 /* AppDelegate.swift in Sources */,
 				A2E1A04427737E1400E4D4F1 /* SceneDelegate.swift in Sources */,
