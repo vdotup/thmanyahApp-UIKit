@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A272522C27748F3100357CA2 /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = A272522B27748F3100357CA2 /* UIView+.swift */; };
+		A272522F2774909000357CA2 /* LandingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A272522E2774909000357CA2 /* LandingView.swift */; };
 		A2E1A04227737E1400E4D4F1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2E1A04127737E1400E4D4F1 /* AppDelegate.swift */; };
 		A2E1A04427737E1400E4D4F1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2E1A04327737E1400E4D4F1 /* SceneDelegate.swift */; };
 		A2E1A04627737E1400E4D4F1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2E1A04527737E1400E4D4F1 /* ViewController.swift */; };
@@ -24,6 +25,7 @@
 
 /* Begin PBXFileReference section */
 		A272522B27748F3100357CA2 /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
+		A272522E2774909000357CA2 /* LandingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingView.swift; sourceTree = "<group>"; };
 		A2E1A03E27737E1400E4D4F1 /* thmanyahApp-UIKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "thmanyahApp-UIKit.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2E1A04127737E1400E4D4F1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A2E1A04327737E1400E4D4F1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -51,6 +53,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A272522D2774906A00357CA2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A272522E2774909000357CA2 /* LandingView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		A2E1A03527737E1400E4D4F1 = {
 			isa = PBXGroup;
 			children = (
@@ -70,6 +80,7 @@
 		A2E1A04027737E1400E4D4F1 /* thmanyahApp-UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				A272522D2774906A00357CA2 /* Views */,
 				A2E1A05D2773805500E4D4F1 /* Extensions */,
 				A2E1A05827737FF400E4D4F1 /* Fonts */,
 				A2E1A05727737FEC00E4D4F1 /* Models */,
@@ -185,6 +196,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A272522F2774909000357CA2 /* LandingView.swift in Sources */,
 				A2E1A05F2773806D00E4D4F1 /* UIColor+.swift in Sources */,
 				A2E1A04627737E1400E4D4F1 /* ViewController.swift in Sources */,
 				A2E1A04227737E1400E4D4F1 /* AppDelegate.swift in Sources */,

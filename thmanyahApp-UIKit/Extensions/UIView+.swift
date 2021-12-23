@@ -18,7 +18,14 @@ extension UIView {
         heightAnchor.constraint(equalTo: view.heightAnchor).isActive = true
     }
     
-    func anchor(top: NSLayoutYAxisAnchor?, leading: NSLayoutXAxisAnchor?, bottom: NSLayoutYAxisAnchor?, trailing: NSLayoutXAxisAnchor?, padding: UIEdgeInsets = .zero, size: CGSize = .zero) {
+    func anchor(top: NSLayoutYAxisAnchor? = nil,
+                leading: NSLayoutXAxisAnchor? = nil,
+                bottom: NSLayoutYAxisAnchor? = nil,
+                trailing: NSLayoutXAxisAnchor? = nil,
+                centerX: NSLayoutXAxisAnchor? = nil,
+                centerY: NSLayoutYAxisAnchor? = nil,
+                padding: UIEdgeInsets = .zero,
+                size: CGSize = .zero) {
         translatesAutoresizingMaskIntoConstraints = false
         
         if let top = top {
@@ -35,6 +42,14 @@ extension UIView {
         
         if let trailing = trailing {
             trailingAnchor.constraint(equalTo: trailing, constant: -padding.right).isActive = true
+        }
+        
+        if let centerX = centerX {
+            centerXAnchor.constraint(equalTo: centerX, constant: 0).isActive = true
+        }
+        
+        if let centerY = centerY {
+            centerYAnchor.constraint(equalTo: centerY, constant: 0).isActive = true
         }
         
         if size.width != 0 {
