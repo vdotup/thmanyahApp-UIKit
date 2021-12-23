@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A272522C27748F3100357CA2 /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = A272522B27748F3100357CA2 /* UIView+.swift */; };
 		A2E1A04227737E1400E4D4F1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2E1A04127737E1400E4D4F1 /* AppDelegate.swift */; };
 		A2E1A04427737E1400E4D4F1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2E1A04327737E1400E4D4F1 /* SceneDelegate.swift */; };
 		A2E1A04627737E1400E4D4F1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2E1A04527737E1400E4D4F1 /* ViewController.swift */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A272522B27748F3100357CA2 /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
 		A2E1A03E27737E1400E4D4F1 /* thmanyahApp-UIKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "thmanyahApp-UIKit.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2E1A04127737E1400E4D4F1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A2E1A04327737E1400E4D4F1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -105,6 +107,7 @@
 			isa = PBXGroup;
 			children = (
 				A2E1A05E2773806D00E4D4F1 /* UIColor+.swift */,
+				A272522B27748F3100357CA2 /* UIView+.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -186,6 +189,7 @@
 				A2E1A04627737E1400E4D4F1 /* ViewController.swift in Sources */,
 				A2E1A04227737E1400E4D4F1 /* AppDelegate.swift in Sources */,
 				A2E1A04427737E1400E4D4F1 /* SceneDelegate.swift in Sources */,
+				A272522C27748F3100357CA2 /* UIView+.swift in Sources */,
 				A2E1A05627737FB800E4D4F1 /* Data.swift in Sources */,
 				A2E1A05A2773800A00E4D4F1 /* StatModel.swift in Sources */,
 				A2E1A05C2773804500E4D4F1 /* SideBarItemModel.swift in Sources */,
