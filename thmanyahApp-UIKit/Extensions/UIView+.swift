@@ -24,8 +24,11 @@ extension UIView {
                 trailing: NSLayoutXAxisAnchor? = nil,
                 centerX: NSLayoutXAxisAnchor? = nil,
                 centerY: NSLayoutYAxisAnchor? = nil,
-                padding: UIEdgeInsets = .zero,
-                size: CGSize = .zero) {
+                width: NSLayoutAnchor<NSLayoutDimension>? = nil,
+                height: NSLayoutAnchor<NSLayoutDimension>? = nil,
+                widthConstant: CGFloat = .zero,
+                heightConstant: CGFloat = .zero,
+                padding: UIEdgeInsets = .zero) {
         translatesAutoresizingMaskIntoConstraints = false
         
         if let top = top {
@@ -52,12 +55,20 @@ extension UIView {
             centerYAnchor.constraint(equalTo: centerY, constant: 0).isActive = true
         }
         
-        if size.width != 0 {
-            widthAnchor.constraint(equalToConstant: size.width).isActive = true
+        if let width = width {
+            widthAnchor.constraint(equalTo: width, constant: widthConstant).isActive = true
         }
         
-        if size.height != 0 {
-            heightAnchor.constraint(equalToConstant: size.height).isActive = true
+        if let height = height {
+            heightAnchor.constraint(equalTo: height, constant: heightConstant).isActive = true
+        }
+        
+        if width == nil && widthConstant != .zero {
+            widthAnchor.constraint(equalToConstant: widthConstant).isActive = true
+        }
+        
+        if height == nil && heightConstant != .zero {
+            heightAnchor.constraint(equalToConstant: heightConstant).isActive = true
         }
     }
     

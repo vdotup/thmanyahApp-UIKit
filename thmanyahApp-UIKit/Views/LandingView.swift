@@ -24,13 +24,13 @@ class LandingView: UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
         
-        backgroundColor = .bone
+        //backgroundColor = .bone
         
         addSubview(logo)
-        logo.anchor(centerX: centerXAnchor, centerY: centerYAnchor, size: CGSize(width: 143, height: 90))
+        logo.anchor(centerX: centerXAnchor, centerY: centerYAnchor, widthConstant: 143, heightConstant: 90)
         
         addSubview(subtitle)
-        subtitle.anchor(top: logo.bottomAnchor, centerX: centerXAnchor, size: CGSize(width: 143, height: 90))
+        subtitle.anchor(top: logo.bottomAnchor, centerX: centerXAnchor, widthConstant: 143, heightConstant: 90)
     }
     
     required init?(coder: NSCoder) {
