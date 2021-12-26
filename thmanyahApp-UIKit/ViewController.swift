@@ -12,35 +12,37 @@ class ViewController: UIViewController {
     let scrollView: UIScrollView = {
         let view = UIScrollView()
         view.backgroundColor = .white
+        view.contentInsetAdjustmentBehavior = .never
+        return view
+    }()
+    
+    let container: UIView = {
+        let view = UIView()
+        view.backgroundColor = .orange
         return view
     }()
     
     let vstack: UIStackView = {
         let stack = UIStackView()
         stack.axis = .vertical
-        stack.spacing = 10
-        stack.backgroundColor = .brown
+        stack.spacing = 0
+        stack.backgroundColor = .white
         return stack
     }()
     
-    let landingView: UIView = {
-        let view = LandingView()
-        view.anchor(heightConstant: 500)
-        view.backgroundColor = .magenta
+//    let landingView: UIView = {
+//        let view = LandingView()
+//        //view.anchor(heightConstant: 720)
+//        return view
+//    }()
+    
+    let statsView: UIView = {
+        let view = StatsView()
         return view
     }()
     
-    let landingView2: UIView = {
-        let view = LandingView()
-        view.anchor(heightConstant: 200)
-        view.backgroundColor = .green
-        return view
-    }()
-    
-    let landingView3: UIView = {
-        let view = LandingView()
-        view.anchor(heightConstant: 1200)
-        view.backgroundColor = .yellow
+    let productionView: UIView = {
+        let view = ProductionView()
         return view
     }()
     
@@ -48,10 +50,11 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         view.addSubview(scrollView)
-        scrollView.addSubview(vstack)
-        vstack.addArrangedSubview(landingView)
-        vstack.addArrangedSubview(landingView2)
-        vstack.addArrangedSubview(landingView3)
+        scrollView.addSubview(container)
+        container.addSubview(vstack)
+        vstack.addArrangedSubview(LandingView())
+        vstack.addArrangedSubview(statsView)
+        vstack.addArrangedSubview(productionView)
         
         scrollView.anchor(top: view.topAnchor,
                           leading: view.leadingAnchor,
@@ -59,6 +62,13 @@ class ViewController: UIViewController {
                           trailing: view.trailingAnchor
         )
         
+        container.anchor(top: scrollView.topAnchor,
+                          leading: scrollView.leadingAnchor,
+                          bottom: scrollView.bottomAnchor,
+                          trailing: scrollView.trailingAnchor,
+                         width: scrollView.widthAnchor
+        )
+        scrollView.contentInsetAdjustmentBehavior = .never
         vstack.anchor(top: scrollView.topAnchor,
                       leading: scrollView.leadingAnchor,
                       bottom: scrollView.bottomAnchor,
