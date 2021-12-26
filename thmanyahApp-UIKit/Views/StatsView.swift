@@ -15,7 +15,16 @@ class StatCell: UICollectionViewCell {
         label.numberOfLines = 0
         label.textAlignment = .center
         label.text = stats[0].title
+        label.sizeToFit()
         return label
+    }()
+    
+    let vstak: UIStackView = {
+        let stack = UIStackView()
+        stack.axis = .vertical
+        stack.alignment = .center
+        stack.spacing = 0
+        return stack
     }()
     
     let hstak: UIStackView = {
@@ -27,26 +36,21 @@ class StatCell: UICollectionViewCell {
     
     let subtitle: UILabel = {
         let label = UILabel()
-        label.font = .init(name: "IBMPlexSansArabic-SemiBold", size: 20)
+        label.font = .init(name: "IBMPlexSansArabic-SemiBold", size: 18)
         label.textColor = .vermilion
         label.numberOfLines = 0
         label.textAlignment = .center
-        label.sizeToFit()
         label.text = stats[0].subtitle
         return label
     }()
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-
-        
-        addSubview(title)
-        addSubview(hstak)
+        addSubview(vstak)
+        vstak.addArrangedSubview(title)
+        vstak.addArrangedSubview(hstak)
         hstak.addArrangedSubview(subtitle)
-        
-        title.anchor(top: topAnchor, leading: leadingAnchor, trailing: trailingAnchor, heightConstant: 50)
-        hstak.anchor(top: title.bottomAnchor, leading: leadingAnchor, bottom: bottomAnchor, trailing: trailingAnchor,
-                     padding: .init(top: 10, left: 0, bottom: 0, right: 0))
+        vstak.anchor(top: topAnchor, leading: leadingAnchor, bottom: bottomAnchor, trailing: trailingAnchor)
     }
     
     required init?(coder: NSCoder) {
@@ -56,10 +60,20 @@ class StatCell: UICollectionViewCell {
 
 class StatsView: UIView {
     
+    let vstack: UIStackView = {
+        let stack = UIStackView()
+        stack.backgroundColor = .green
+        stack.axis = .vertical
+        stack.spacing = 0
+        return stack
+    }()
+    
     let collectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
-        layout.itemSize = CGSize(width: 180, height: 135)
+        layout.itemSize = CGSize(width: 163, height: 130)
+        layout.minimumLineSpacing = 20
         let cv = UICollectionView(frame: .zero, collectionViewLayout: layout)
+        cv.anchor(heightConstant: 580)
         return cv
     }()
     
@@ -70,13 +84,16 @@ class StatsView: UIView {
         collectionView.delegate = self
         collectionView.dataSource = self
         
-        addSubview(collectionView)
+        addSubview(vstack)
+        vstack.addArrangedSubview(collectionView)
         
-        collectionView.anchor(top: topAnchor,
+        vstack.anchor(top: topAnchor,
                               leading: leadingAnchor,
                               bottom: bottomAnchor,
                               trailing: trailingAnchor,
-                              padding: .init(top: 120, left: 26, bottom: 0, right: 26))
+                              padding: .init(top: 120, left: 40, bottom: 170, right: 40))
+        
+        collectionView.sizeToFit()
     }
     
     required init?(coder: NSCoder) {

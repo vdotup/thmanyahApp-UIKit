@@ -30,11 +30,10 @@ class ViewController: UIViewController {
         return stack
     }()
     
-//    let landingView: UIView = {
-//        let view = LandingView()
-//        //view.anchor(heightConstant: 720)
-//        return view
-//    }()
+    let landingView: UIView = {
+        let view = LandingView()
+        return view
+    }()
     
     let statsView: UIView = {
         let view = StatsView()
@@ -52,7 +51,7 @@ class ViewController: UIViewController {
         view.addSubview(scrollView)
         scrollView.addSubview(container)
         container.addSubview(vstack)
-        vstack.addArrangedSubview(LandingView())
+        vstack.addArrangedSubview(landingView)
         vstack.addArrangedSubview(statsView)
         vstack.addArrangedSubview(productionView)
         
