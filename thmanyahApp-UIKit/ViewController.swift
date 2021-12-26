@@ -45,6 +45,11 @@ class ViewController: UIViewController {
         return view
     }()
     
+    let partnersView: UIView = {
+        let view = PartnersView()
+        return view
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -54,6 +59,7 @@ class ViewController: UIViewController {
         vstack.addArrangedSubview(landingView)
         vstack.addArrangedSubview(statsView)
         vstack.addArrangedSubview(productionView)
+        vstack.addArrangedSubview(partnersView)
         
         scrollView.anchor(top: view.topAnchor,
                           leading: view.leadingAnchor,
