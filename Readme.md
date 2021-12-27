@@ -1,6 +1,8 @@
 # Thmanyah App
 
-clone for [company.thmanyah.com](https://company.thmanyah.com/) page in uikit
+clone for [company.thmanyah.com](https://company.thmanyah.com/) page (mobile version) in uikit
 
 ## Preview
-![previewGif](preview.png)
+![previewGif](preview.gif)
+
+
