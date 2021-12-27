@@ -9,10 +9,15 @@ import UIKit
 
 class ProductionView: UIView {
     
-    let imageBannerView: UIView = {
-        let view = UIView()
-        view.backgroundColor = .blue
-        view.anchor(heightConstant: 100)
+    let imageBannerView1: ImageBannerView = {
+        let view = ImageBannerView(images: ["img1", "img2", "img3", "img4"], reverse: false, duration: 100)
+        view.anchor(heightConstant: 137)
+        return view
+    }()
+    
+    let imageBannerView2: ImageBannerView = {
+        let view = ImageBannerView(images: ["img5", "img6", "img7", "img8"], reverse: true, duration: 80)
+        view.anchor(heightConstant: 137)
         return view
     }()
     
@@ -51,7 +56,8 @@ class ProductionView: UIView {
         backgroundColor = .black
         
         addSubview(vstak)
-        vstak.addArrangedSubview(imageBannerView)
+        vstak.addArrangedSubview(imageBannerView1)
+        vstak.addArrangedSubview(imageBannerView2)
         vstak.addArrangedSubview(subtitleLabel)
         vstak.addArrangedSubview(descriptionLabel)
         vstak.anchor(top: topAnchor,

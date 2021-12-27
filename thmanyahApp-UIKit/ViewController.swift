@@ -50,6 +50,11 @@ class ViewController: UIViewController {
         return view
     }()
     
+    let footerView: UIView = {
+        let view = FooterView()
+        return view
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -60,6 +65,7 @@ class ViewController: UIViewController {
         vstack.addArrangedSubview(statsView)
         vstack.addArrangedSubview(productionView)
         vstack.addArrangedSubview(partnersView)
+        vstack.addArrangedSubview(footerView)
         
         scrollView.anchor(top: view.topAnchor,
                           leading: view.leadingAnchor,
