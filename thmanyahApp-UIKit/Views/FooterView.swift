@@ -135,7 +135,7 @@ class FooterView: UIView {
         let stack = UIStackView()
         stack.axis = .horizontal
         stack.alignment = .center
-        stack.distribution = .fill
+        stack.distribution = .equalSpacing
         return stack
     }()
     
@@ -216,59 +216,59 @@ class FooterView: UIView {
     }()
     
     @objc private func aboutButtonHandler() {
-        
+        UIApplication.shared.open(URL(string: Links.about.rawValue)!)
     }
     
     @objc private func handbookButtonHandler() {
-        
+        UIApplication.shared.open(URL(string: Links.handbook.rawValue)!)
     }
     
     @objc private func jobsButtonHandler() {
-        
+        UIApplication.shared.open(URL(string: Links.jobs.rawValue)!)
     }
     
     @objc private func blogButtonHandler() {
-        
+        UIApplication.shared.open(URL(string: Links.blog.rawValue)!)
     }
     
     @objc private func mediaKitButtonHandler() {
-        
+        UIApplication.shared.open(URL(string: Links.mediaKit.rawValue)!)
     }
     
     @objc private func visualIdentityButtonHandler() {
-        
+        UIApplication.shared.open(URL(string: Links.visualIdentity.rawValue)!)
     }
     
     @objc private func privacyPolicyButtonHandler() {
-        
+        UIApplication.shared.open(URL(string: Links.privacyPolicy.rawValue)!)
     }
     
     @objc private func contactButtonHandler() {
-        
+        UIApplication.shared.open(URL(string: Links.contact.rawValue)!)
     }
     
     @objc private func faqButtonHandler() {
-        
+        UIApplication.shared.open(URL(string: Links.faq.rawValue)!)
     }
     
     @objc private func linkedinButtonHandler() {
-        
+        UIApplication.shared.open(URL(string: Links.linkedIn.rawValue)!)
     }
     
     @objc private func twitterButtonHandler() {
-        
+        UIApplication.shared.open(URL(string: Links.twitter.rawValue)!)
     }
     
     @objc private func facebookButtonHandler() {
-        
+        UIApplication.shared.open(URL(string: Links.facebook.rawValue)!)
     }
     
     @objc private func instagramButtonHandler() {
-        
+        UIApplication.shared.open(URL(string: Links.instagram.rawValue)!)
     }
     
     @objc private func youtubeButtonHandler() {
-        
+        UIApplication.shared.open(URL(string: Links.youtube.rawValue)!)
     }
 
     override init(frame: CGRect) {
@@ -312,6 +312,7 @@ class FooterView: UIView {
         hstack3.addArrangedSubview(facebookButton)
         hstack3.addArrangedSubview(instagramButton)
         hstack3.addArrangedSubview(youtubeButton)
+        hstack3.anchor(width: vstak.widthAnchor)
     }
     
     required init?(coder: NSCoder) {

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A272433D277A6147008D8D24 /* Readme.md in Resources */ = {isa = PBXBuildFile; fileRef = A272433C277A6147008D8D24 /* Readme.md */; };
 		A272522C27748F3100357CA2 /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = A272522B27748F3100357CA2 /* UIView+.swift */; };
 		A272522F2774909000357CA2 /* LandingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A272522E2774909000357CA2 /* LandingView.swift */; };
 		A272523127768B3000357CA2 /* StatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A272523027768B3000357CA2 /* StatsView.swift */; };
@@ -26,9 +27,11 @@
 		A2E1A05F2773806D00E4D4F1 /* UIColor+.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2E1A05E2773806D00E4D4F1 /* UIColor+.swift */; };
 		A2E1A062277380BE00E4D4F1 /* IBMPlexSansArabic-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = A2E1A061277380B700E4D4F1 /* IBMPlexSansArabic-SemiBold.otf */; };
 		A2E1A063277380BE00E4D4F1 /* IBMPlexSansArabic-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = A2E1A060277380B600E4D4F1 /* IBMPlexSansArabic-Regular.otf */; };
+		A2F1879A277A205600D0E8F8 /* SideBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F18799277A205600D0E8F8 /* SideBarView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A272433C277A6147008D8D24 /* Readme.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Readme.md; sourceTree = "<group>"; };
 		A272522B27748F3100357CA2 /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
 		A272522E2774909000357CA2 /* LandingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingView.swift; sourceTree = "<group>"; };
 		A272523027768B3000357CA2 /* StatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsView.swift; sourceTree = "<group>"; };
@@ -52,6 +55,7 @@
 		A2E1A05E2773806D00E4D4F1 /* UIColor+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+.swift"; sourceTree = "<group>"; };
 		A2E1A060277380B600E4D4F1 /* IBMPlexSansArabic-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IBMPlexSansArabic-Regular.otf"; sourceTree = "<group>"; };
 		A2E1A061277380B700E4D4F1 /* IBMPlexSansArabic-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IBMPlexSansArabic-SemiBold.otf"; sourceTree = "<group>"; };
+		A2F18799277A205600D0E8F8 /* SideBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideBarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +73,7 @@
 			isa = PBXGroup;
 			children = (
 				A272522E2774909000357CA2 /* LandingView.swift */,
+				A2F18799277A205600D0E8F8 /* SideBarView.swift */,
 				A2B5CF402779F69E007FF435 /* ImageBannerView.swift */,
 				A272523227768BEA00357CA2 /* ProductionView.swift */,
 				A2B5CF3A27787C04007FF435 /* PartnersView.swift */,
@@ -81,6 +86,7 @@
 		A2E1A03527737E1400E4D4F1 = {
 			isa = PBXGroup;
 			children = (
+				A272433C277A6147008D8D24 /* Readme.md */,
 				A2E1A04027737E1400E4D4F1 /* thmanyahApp-UIKit */,
 				A2E1A03F27737E1400E4D4F1 /* Products */,
 			);
@@ -200,6 +206,7 @@
 			files = (
 				A2E1A04E27737E1600E4D4F1 /* LaunchScreen.storyboard in Resources */,
 				A2E1A062277380BE00E4D4F1 /* IBMPlexSansArabic-SemiBold.otf in Resources */,
+				A272433D277A6147008D8D24 /* Readme.md in Resources */,
 				A2E1A04B27737E1600E4D4F1 /* Assets.xcassets in Resources */,
 				A2E1A04927737E1400E4D4F1 /* Main.storyboard in Resources */,
 				A2E1A063277380BE00E4D4F1 /* IBMPlexSansArabic-Regular.otf in Resources */,
@@ -216,6 +223,7 @@
 				A272523327768BEA00357CA2 /* ProductionView.swift in Sources */,
 				A272522F2774909000357CA2 /* LandingView.swift in Sources */,
 				A2B5CF412779F69E007FF435 /* ImageBannerView.swift in Sources */,
+				A2F1879A277A205600D0E8F8 /* SideBarView.swift in Sources */,
 				A2E1A05F2773806D00E4D4F1 /* UIColor+.swift in Sources */,
 				A2E1A04627737E1400E4D4F1 /* ViewController.swift in Sources */,
 				A2E1A04227737E1400E4D4F1 /* AppDelegate.swift in Sources */,
